@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="ShoppingCart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="358"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="358"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqR-rH-KLz">
+                        <rect key="frame" x="0.0" y="0.0" width="262" height="358"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yOr-T5-kbP">
+                                <rect key="frame" x="8" y="10" width="246" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="VcB-fR-ZNC"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="om3-sw-Wwe">
+                                <rect key="frame" x="7" y="172" width="250" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maybeline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTB-tS-qz8">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="18.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAR 20.80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TEU-pI-uya">
+                                        <rect key="frame" x="0.0" y="18.666666666666671" width="250" height="20.333333333333329"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="aUf-do-yVn"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWC-76-kzC">
+                                <rect key="frame" x="20" y="309" width="222" height="34.333333333333314"/>
+                                <color key="tintColor" red="0.2823529541" green="0.56862747670000002" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="pick an option"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yOr-T5-kbP" firstAttribute="top" secondItem="wqR-rH-KLz" secondAttribute="top" constant="10" id="0OS-Tf-3Q9"/>
+                            <constraint firstAttribute="height" constant="358" id="BUc-oB-Cb2"/>
+                            <constraint firstAttribute="trailing" secondItem="om3-sw-Wwe" secondAttribute="trailing" constant="5" id="FSD-VS-bIB"/>
+                            <constraint firstItem="gWC-76-kzC" firstAttribute="centerX" secondItem="wqR-rH-KLz" secondAttribute="centerX" id="iPL-yI-XiK"/>
+                            <constraint firstItem="yOr-T5-kbP" firstAttribute="leading" secondItem="wqR-rH-KLz" secondAttribute="leading" constant="8" id="jOS-eh-T8h"/>
+                            <constraint firstItem="om3-sw-Wwe" firstAttribute="top" secondItem="yOr-T5-kbP" secondAttribute="bottom" constant="10" id="jRa-GR-8QS"/>
+                            <constraint firstAttribute="trailing" secondItem="yOr-T5-kbP" secondAttribute="trailing" constant="8" id="nRg-2a-J3a"/>
+                            <constraint firstItem="gWC-76-kzC" firstAttribute="leading" secondItem="wqR-rH-KLz" secondAttribute="leading" constant="20" id="pTR-2P-kT4"/>
+                            <constraint firstItem="gWC-76-kzC" firstAttribute="top" secondItem="om3-sw-Wwe" secondAttribute="bottom" constant="98" id="prO-b8-qTP"/>
+                            <constraint firstAttribute="trailing" secondItem="gWC-76-kzC" secondAttribute="trailing" constant="20" id="w23-mb-tt6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wqR-rH-KLz" secondAttribute="bottom" id="67L-BV-5f6"/>
+                <constraint firstItem="wqR-rH-KLz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BtM-HZ-rCD"/>
+                <constraint firstAttribute="trailing" secondItem="wqR-rH-KLz" secondAttribute="trailing" id="RGj-jh-63o"/>
+                <constraint firstItem="wqR-rH-KLz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nrk-S6-zZr"/>
+            </constraints>
+            <size key="customSize" width="262" height="358"/>
+            <connections>
+                <outlet property="pickbtn" destination="gWC-76-kzC" id="6KZ-sC-4fm"/>
+                <outlet property="productName" destination="JTB-tS-qz8" id="okS-lx-5ow"/>
+                <outlet property="productimage" destination="yOr-T5-kbP" id="Y60-54-PZJ"/>
+            </connections>
+            <point key="canvasLocation" x="187.78625954198472" y="128.16901408450704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
